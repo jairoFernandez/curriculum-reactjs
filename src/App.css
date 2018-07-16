@@ -1,0 +1,154 @@
+.App {  
+}
+
+.Curriculum{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Container CurriculumHeader */
+.CurriculumHeader{
+  padding-top: 1rem;
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000b9;
+  color: white;
+}
+
+.CurriculumHeader h1{
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+}
+
+.CurriculumHeader h2{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgba(210, 208, 208, 0.345);
+  margin-top: -1rem;
+}
+
+@media screen and (min-width:768px) {
+  .CurriculumHeader{
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+/*Flexible items of CurriculumHeader*/
+.CurriculumHeader-item{
+  text-align: center;
+  padding: 1rem;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.CurriculumHeader-item .profilePhoto{
+  flex: 1 1 auto;  
+}
+@media screen and (min-width:768px) {
+  .profilePhoto{
+    flex: 0 0 auto;
+  }
+}
+
+.CurriculumHeader-item .presentation{  
+  align-self: center;  
+  flex: 1 3 auto;  
+
+}
+
+small{
+  color: #ffffffd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: -1.5rem;
+}
+
+.info-icons:last-child{
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .presentation{
+    flex: 1 2 auto;
+  }
+}
+
+.CurriculumHeader img{
+  width: 200px;
+  border-radius: 50%;
+}
+
+/*Container flex*/
+.CurriculumInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Container item*/
+.CurriculumInfo-item{
+  padding: 1.5rem;
+}
+
+button{
+  text-align: center;
+  font-size: 1rem; 
+  text-transform: uppercase;
+  display: block;
+  padding: .5rem;
+ 
+  height: 2.5rem;
+  width: 150px;
+  color: #0000008b;
+  border: 1.5px solid #0000008b;
+  background-color: transparent; 
+}
+
+.CurriculumInfo-item .Curriculum-about{
+  padding: 1rem;
+  order: -1;
+  text-align: center;
+}
+
+.CurriculumInfo-item .Curriculum-skills{
+  order: 1;
+
+}
+
+.Curriculum-experience-work{
+  order: 3;
+}
+
+@media screen and (min-width:768px) {
+  .CurriculumInfo{
+    flex-direction: row;
+  }
+
+  .Curriculum-skills{
+    order: 1;
+  }
+  .Curriculum-about{
+    order:2;
+    align-self: stretch;
+  }
+}
+
+
+.card{
+  background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 5px #999;
+}
