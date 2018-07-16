@@ -1,0 +1,9 @@
+.Education{
+    display: flex;
+    flex-direction: "column";
+    flex-wrap: wrap;
+}
+
+.educationList{
+    flex-grow: 1;
+}

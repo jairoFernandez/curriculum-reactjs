@@ -7,4 +7,5 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import "typeface-roboto";
 
 ReactDOM.render(<App />, document.getElementById('root'));
+document.title = "Currículum";
 registerServiceWorker();

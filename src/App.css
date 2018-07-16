@@ -15,7 +15,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #000000b9;
+  background-color: #090909db;
   color: white;
 }
 
@@ -91,12 +91,22 @@ small{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  
 }
 
 /*Container item*/
 .CurriculumInfo-item{
   padding: 1.5rem;
+  width: 90%;
+  flex-grow: 1;
+  
+}
+
+@media screen and (min-width: 760px){
+  .CurriculumInfo-item:nt-child(0){
+    flex-grow: 0;
+  }
 }
 
 button{
@@ -105,9 +115,9 @@ button{
   text-transform: uppercase;
   display: block;
   padding: .5rem;
- 
+  margin: 0 auto;
   height: 2.5rem;
-  width: 150px;
+  width: 180px;
   color: #0000008b;
   border: 1.5px solid #0000008b;
   background-color: transparent; 
@@ -121,7 +131,6 @@ button{
 
 .CurriculumInfo-item .Curriculum-skills{
   order: 1;
-
 }
 
 .Curriculum-experience-work{
@@ -151,4 +160,23 @@ button{
     padding-left: 20px;
     padding-bottom: 20px;
     box-shadow: 2px 2px 5px #999;
+}
+
+.card:hover{
+  /*cursor: pointer;*/
+  box-shadow: 14px 6px 9px #999;
+}
+
+
+.CurriculumExtra{
+  display: flex;
+  flex-direction: column;
+}
+
+.Curriculum-experience-work{
+  order: -1;
+}
+
+.Curriculum-experience-education{
+  order: 2;
 }

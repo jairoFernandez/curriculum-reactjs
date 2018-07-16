@@ -4,6 +4,7 @@ import perfil from "../assets/perfil.jpg";
 import { Skill } from './Skill';
 import { Info } from './Info';
 import { Experience } from './Experience/Experience';
+import { Education } from './Education/Education';
 
 export class Curriculum extends Component{   
     
@@ -24,7 +25,7 @@ export class Curriculum extends Component{
                 </header>
                 <section className="CurriculumInfo">
                     <section className="CurriculumInfo-item Curriculum-about">
-                        <button>Acerca de mí</button>
+                        <button><i className="fa fa-info-circle"></i> Acerca de mí</button>
                         <br/>
                         <div className="card">{data.about_me}</div>                    
                     </section>
@@ -32,11 +33,19 @@ export class Curriculum extends Component{
                         <Skill skills={data.skills} />                       
                     </section>
                 </section>               
-                <section className="Curriculum-experience-work">
-                    <br />
-                    <button>Experiencia</button>
-                    <br />
-                    <Experience experiences={data.experience} />
+                <section className="CurriculumExtra">
+                    <section className="Curriculum-experience-work">
+                        <br />
+                        <button><i className="fa fa-briefcase"></i> Experiencia</button>
+                        <br />
+                        <Experience experiences={data.experience} />
+                    </section>
+                    <section className="Curriculum-experience-education">
+                        <br />
+                        <button><i className="fa fa-graduation-cap"></i> Educación</button>
+                        <br />
+                        <Education educationList={data.education} />
+                    </section>
                 </section>
             </section>            
         );

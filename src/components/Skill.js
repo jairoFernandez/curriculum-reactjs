@@ -5,8 +5,8 @@ export class Skill extends Component {
         const { skills } = this.props;
         return (
             <div className="skills">
-            <div className="card">
-                <button>Skills</button>
+            <button><i className="fa fa-power-off"></i> Skills</button>
+            <div className="card" style={{ textAlign: "center" }}>
                 <br />
                 {                    
                     skills.map(skill => {

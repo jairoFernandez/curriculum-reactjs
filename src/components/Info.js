@@ -9,7 +9,9 @@ export class Info extends Component{
                     information.map(info => {
                         return (
                             <div key={info.name}>
-                                <small><i className={info.icon}></i>&nbsp;<p>{info.value}</p></small>
+                                <small><i className={info.icon}></i>&nbsp;
+                                    <p>{info.value}</p>
+                                </small>
                             </div>
                         )
                     })

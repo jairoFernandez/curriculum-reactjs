@@ -72,32 +72,38 @@
         {
             "name":"Phone",
             "value": "(+57) 317 6569802",
-            "icon": "fa fa-phone"
+            "icon": "fa fa-phone",
+            "type": "phone"
         },
         {
             "name":"Email",
             "value": "hola@jairofernandez.me",
-            "icon": "fa fa-envelope"
+            "icon": "fa fa-envelope",
+            "type": "mail"
         },
         {
             "name":"City",
             "value": "Bogotá, D.C., Colombia",
-            "icon": "fa fa-map-marker"
+            "icon": "fa fa-map-marker",
+            "type": "none"
         },
         {
             "name":"Linkedin",
-            "value": "https://www.linkedin.com/in/jairofg12/",
-            "icon": "fa fa-linkedin"
+            "value": "jairofg12",
+            "icon": "fa fa-linkedin",
+            "type": "link"
         },
         {
             "name":"Web",
             "value": "https://jairofernandez.me",
-            "icon": "fa fa-paperclip"
+            "icon": "fa fa-paperclip",
+            "type": "link"
         },
         {
             "name":"Github",
-            "value": "https://github.com/jairoFernandez",
-            "icon": "fa fa-github"
+            "value": "jairoFernandez",
+            "icon": "fa fa-github",
+            "type": "link"
         }
     ],
     "experience": [
